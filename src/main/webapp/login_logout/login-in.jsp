@@ -8,4 +8,5 @@
 <p><input type="submit" value="ログイン"</p>
 </form>
 
+
 <%@include file="../footer.html" %>
