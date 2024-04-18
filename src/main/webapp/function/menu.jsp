@@ -1,6 +1,16 @@
-<%@page contentType="text/html; charset=UTF-8" %>
+<%@page pageEncoding="UTF-8" %>
 
-
+	<header>
+		<h1 class="header-title">
+			得点管理システム
+		</h1>
+	
+		<h5 class="header-logout">
+			君<a href="../login-logout/logout.jsp">ログアウト</a>
+		
+		</h5>
+	
+	</header>
 <aside>
 
 <li><a href="menu.jsp">メニュー</a></li>
@@ -22,4 +32,3 @@
 
 
 
-<%@include file="../footer.html" %>
