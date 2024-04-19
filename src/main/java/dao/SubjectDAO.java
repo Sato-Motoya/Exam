@@ -16,7 +16,7 @@ public class SubjectDAO extends DAO{
 		PreparedStatement st=con.prepareStatement(
 				"select name from subject where cd = ? and school = ?");
 		st.setString(1, cd);
-		st.setString(2, school);
+		st.setString(2, school.toString());
 		
 		ResultSet rs=st.executeQuery();
 
