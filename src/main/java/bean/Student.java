@@ -49,6 +49,7 @@ public class Student implements java.io.Serializable {
 	public void setSchool(School school) {
 		this.school=school;
 	}
+//	何年生かを返すメソッドだと思われる
 	public int getSchoolYear() {
 		
 	}

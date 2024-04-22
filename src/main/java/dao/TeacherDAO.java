@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import bean.School;
 import bean.Teacher;
 
 public class TeacherDAO extends DAO{
@@ -18,7 +19,7 @@ public class TeacherDAO extends DAO{
 
 			PreparedStatement st;
 			st=con.prepareStatement(
-				"select * from teache where id=? and password=?");
+				"select * from teacher where id=? and password=?");
 			st.setString(1, id);
 			st.setString(2, password);
 			ResultSet rs=st.executeQuery();
@@ -28,7 +29,7 @@ public class TeacherDAO extends DAO{
 				teacher.setId(rs.getString("id"));
 				teacher.setName(rs.getString("name"));
 				teacher.setPassword(rs.getString("password"));
-				teacher.setSchool(rs.getString("school"));
+				teacher.setSchool((School)rs.getObject("school"));
 			}
 
 			st.close();
