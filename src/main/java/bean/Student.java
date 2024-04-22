@@ -31,7 +31,7 @@ public class Student implements java.io.Serializable {
 	}
 
 	// データを設定するメソッドを定義
-	public void setno(String no) {
+	public void setNo(String no) {
 		this.no=no;
 	}
 	public void setName(String name) {
@@ -48,5 +48,9 @@ public class Student implements java.io.Serializable {
 	}
 	public void setSchool(School school) {
 		this.school=school;
+	}
+//	何年生かを返すメソッドだと思われる
+	public int getSchoolYear() {
+		
 	}
 }
