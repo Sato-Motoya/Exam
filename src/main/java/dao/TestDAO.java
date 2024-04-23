@@ -19,7 +19,7 @@ public class TestDAO extends DAO{
 		Connection con=getConnection();
 		
 		PreparedStatement st=con.prepareStatement(
-				"select name from test where student = ? and subject = ? and school = ? and no = ?");
+				"select name from test where student_no = ? and subject_cd = ? and school_cd = ? and no = ?");
 		st.setString(1,student.toString());
 		st.setString(2, subject.toString());
 		st.setString(3, school.toString());
