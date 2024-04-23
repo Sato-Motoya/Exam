@@ -9,8 +9,23 @@ import bean.Teacher;
 
 public class TeacherDAO extends DAO{
 	
-	public Teacher get(String id) {
+	public Teacher get(String id) throws Exception{
+		Connection con=getConnection();
 		
+		PreparedStatement st=con.prepareStatement(
+				"select name from teacher where id = ?");
+		st.setString(1, id);
+		
+		ResultSet rs=st.executeQuery();
+
+		Teacher teacher =null;
+		
+		teacher.setId(id);
+		teacher.setName(rs.getString("name"));
+		teacher.setSchool((School)rs.getObject("school"));
+		teacher.setPassword("password");
+		
+		return teacher;
 	}
 	public Teacher login(String id,String password) throws Exception{
 			Teacher teacher=null;

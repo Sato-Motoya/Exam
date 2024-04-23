@@ -1,5 +1,7 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.List;
 
@@ -10,9 +12,23 @@ public class StudentDAO extends DAO{
 	
 	private String baseSql;
 	
-	public Student get(String no) {
+	public Student get(String no) throws Exception{
 		
+		Connection con=getConnection();
 		
+		PreparedStatement st=con.prepareStatement(
+				"select name from student where no = ?");
+		st.setString(1, no);
+		
+		ResultSet rs=st.executeQuery();
+
+		Student student =null;
+		
+		student.setNo(no);
+		student.setName(rs.getString("name"));
+		student.setSchool((School)rs.getObject("school"));
+		
+		return student;
 	}
 	
 	private List<Student> postFilter(ResultSet rSet ,School school) {
