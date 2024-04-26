@@ -8,7 +8,6 @@ import java.util.List;
 
 import bean.School;
 import bean.Student;
-import bean.Subject;
 
 public class StudentDAO extends DAO{
 	
@@ -44,10 +43,8 @@ public class StudentDAO extends DAO{
 		ResultSet rs=st.executeQuery();
 
 		while (rs.next()) {
-			Subject s=new Subject();
-			s.setCd(rs.getString("cd"));
-			s.setName(rs.getString("name"));
-			s.setSchool((School)rs.getObject("school"));
+			Student s=new Student();
+
 			list.add(s);
 		}
 
