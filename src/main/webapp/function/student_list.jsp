@@ -1,9 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@include file="../header.html" %>
-
-<h1>得点管理システム</h1>
-<h5>君<a href="../login-logout/logout-in.jsp">ログアウト</a></h5>
-
 <%@include file="menu.jsp" %>
 
 <h3>学生管理</h3>
