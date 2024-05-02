@@ -14,7 +14,7 @@
 
 <li>成績管理
 		<ul><a href="test_regist.jsp">成績管理一覧</a></ul>
-		<ul><a href="#">成績参照検索</a></ul>
+		<ul><a href="test_list.jsp">成績参照検索</a></ul>
 </li>
 
 <li><a href="#">科目管理一覧</a></li>
