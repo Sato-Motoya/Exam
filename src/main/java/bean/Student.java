@@ -1,5 +1,7 @@
 package bean;
 
+import java.time.LocalDate;
+
 public class Student implements java.io.Serializable {
 
 	// Beanで使用する変数（フィールド名）を宣言
@@ -29,6 +31,12 @@ public class Student implements java.io.Serializable {
 	public School getSchool() {
 		return school;
 	}
+//	何年生かを返すメソッドだと思われる
+	public int getSchoolYear() {
+		LocalDate today = LocalDate.now();
+		int year=today.getYear();
+		return year-entYear+1;
+	}
 
 	// データを設定するメソッドを定義
 	public void setNo(String no) {
@@ -48,9 +56,5 @@ public class Student implements java.io.Serializable {
 	}
 	public void setSchool(School school) {
 		this.school=school;
-	}
-//	何年生かを返すメソッドだと思われる
-	public int getSchoolYear() {
-		
 	}
 }

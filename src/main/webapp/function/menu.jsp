@@ -1,5 +1,5 @@
 <%@page pageEncoding="UTF-8" %>
-<%@include file="../header.html" %>
+
 
 
 <aside>
@@ -13,7 +13,7 @@
 <p></p>
 
 <li>成績管理
-		<ul><a href="#">成績管理一覧</a></ul>
+		<ul><a href="test_regist.jsp">成績管理一覧</a></ul>
 		<ul><a href="#">成績参照検索</a></ul>
 </li>
 

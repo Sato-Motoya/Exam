@@ -36,7 +36,7 @@ public class SubjectDAO extends DAO{
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
-			"select * from subject where school like ?");
+			"select * from subject where school_cd like ?");
 		st.setString(1, school.toString());
 		ResultSet rs=st.executeQuery();
 
