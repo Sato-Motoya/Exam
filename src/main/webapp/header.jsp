@@ -3,10 +3,6 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-
-<title>得点管理システム</title>
-</head>
 
 
 <body>

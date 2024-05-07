@@ -4,7 +4,7 @@
 
 <aside>
 
-<li><a href="menu.jsp">メニュー</a></li>
+<li><a href="mainmenu.jsp">メニュー</a></li>
 
 <p></p>
 

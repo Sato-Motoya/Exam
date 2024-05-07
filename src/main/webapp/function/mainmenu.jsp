@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/Exam/css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 
