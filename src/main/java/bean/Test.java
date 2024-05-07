@@ -29,7 +29,7 @@ public class Test implements java.io.Serializable {
 	public int getPoint() {
 		return point;
 	}
-	
+
 
 	// データを設定するメソッドを定義
 	public void setStudent(Student student) {

@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns={"*.action"})
 public class FrontController extends HttpServlet {
 
+	@Override
 	public void doPost(
 		HttpServletRequest request, HttpServletResponse response
 	) throws ServletException, IOException {
@@ -27,6 +28,7 @@ public class FrontController extends HttpServlet {
 		}
 	}
 
+	@Override
 	public void doGet(
 		HttpServletRequest request, HttpServletResponse response
 	) throws ServletException, IOException {

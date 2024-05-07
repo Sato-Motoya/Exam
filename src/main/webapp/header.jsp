@@ -4,8 +4,12 @@
 
 <html>
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/Exam/css/style.css">
+=======
+
+>>>>>>> branch 'master' of https://github.com/Sato-Motoya/Exam.git
 <title>得点管理システム</title>
 </head>
 

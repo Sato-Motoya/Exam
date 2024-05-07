@@ -1,8 +1,9 @@
 package dao;
 
+import java.sql.Connection;
+
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
-import java.sql.Connection;
 
 public class DAO {
 	static DataSource ds;
