@@ -11,11 +11,11 @@ import bean.Subject;
 import bean.TestListSubject;
 
 public class TestListSubjectDAO extends DAO{
-	
+
 	private String Sql;
-	
+
 	private List<TestListSubject> postFilter(ResultSet rSet) {
-		
+
 	}
 	public List<TestListSubject> filter(int entYear,String clasNum,Subject subject,School school) throws Exception{
 		List<TestListSubject> list=new ArrayList<>();

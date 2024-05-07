@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpSession;
 import tool.Action;
 
 public class SubjectListAction extends Action {
+	@Override
 	public void execute(
 		HttpServletRequest request, HttpServletResponse response
 	) throws Exception {
@@ -18,10 +19,10 @@ public class SubjectListAction extends Action {
 
 		String school=request.getParameter("ここにIdを");
 		SubjectDAO dao=new SubjectDAO();
-		List<Subject> list=dao.filter(); // 学生一覧を取得 
+		List<Subject> list=dao.filter(); // 学生一覧を取得
 
 		session.setAttribute("list", list); // 学生一覧をlistという名前で保存
-		
+
 		request.getRequestDispatcher("subject-list.jsp").
 		forward(request, response);
 

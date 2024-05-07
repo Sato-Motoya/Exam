@@ -4,8 +4,7 @@
 
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="/Exam/css/style.css">
+
 <title>得点管理システム</title>
 </head>
 

@@ -10,11 +10,11 @@ import bean.Student;
 import bean.TestListStudent;
 
 public class TestListStudentDAO extends DAO{
-	
+
 	private String Sql;
-	
+
 	private List<TestListStudent> postFilter(ResultSet rSet) {
-		
+
 	}
 	public List<TestListStudent> filter(Student student) throws Exception{
 		List<TestListStudent> list=new ArrayList<>();

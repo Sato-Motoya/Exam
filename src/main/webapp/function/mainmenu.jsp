@@ -1,4 +1,11 @@
 <%@page contentType="text/html; charset=UTF-8" %>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/Exam/css/style.css">
+</head>
+
+
 <%@include file="../header.jsp" %>
 <%@include file="menu.jsp" %>
 
