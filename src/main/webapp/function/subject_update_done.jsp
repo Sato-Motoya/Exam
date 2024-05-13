@@ -12,6 +12,7 @@
     <!-- 登録完了メッセージ -->
     <p><label for="registrationMessage">変更が完了しました</label></p>
  
+ 
     
     <!-- リンク：一覧に戻る -->
     <a href="subject_list.jsp">科目一覧</a>

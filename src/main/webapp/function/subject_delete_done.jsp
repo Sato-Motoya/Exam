@@ -13,6 +13,7 @@
     <p><label for="registrationMessage">削除が完了しました</label></p>
     
     
+    
     <!-- リンク：一覧に戻る -->
     <a href="subject_list.jsp">科目一覧</a>
 </body>

@@ -10,6 +10,7 @@
     <h2>科目情報削除</h2>
     <p><label for="registrationMessage">「」</label></p>
     
+    
     <input type="submit" value="削除">
     <br>
     <!-- リンク：一覧に戻る -->
