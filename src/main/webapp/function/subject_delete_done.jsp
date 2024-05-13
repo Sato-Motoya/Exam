@@ -8,11 +8,12 @@
 <body>
     <h1>科目管理システム</h1>
     <h2>科目情報削除</h2>
-    <p><label for="registrationMessage">「」</label></p>
     
-    <input type="submit" value="削除">
-    <br>
+    <!-- 登録完了メッセージ -->
+    <p><label for="registrationMessage">削除が完了しました</label></p>
+    
+    
     <!-- リンク：一覧に戻る -->
-    <a href="subject_list.jsp">戻る</a>
+    <a href="subject_list.jsp">科目一覧</a>
 </body>
 </html>
