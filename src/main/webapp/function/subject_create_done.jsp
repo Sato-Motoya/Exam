@@ -13,7 +13,7 @@
     <p><label for="registrationMessage">登録完了しました</label></p>
     
     <!-- リンク：戻る -->
-    <a href="subject_registration.jsp">戻る</a>
+    <a href="subject_create.jsp">戻る</a>
     
     
     <!-- リンク：一覧に戻る -->
