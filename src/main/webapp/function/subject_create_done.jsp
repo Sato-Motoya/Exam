@@ -17,6 +17,6 @@
     
     
     <!-- リンク：一覧に戻る -->
-    <a href="list.jsp">一覧に戻る</a>
+    <a href="subject_list.jsp">一覧に戻る</a>
 </body>
 </html>

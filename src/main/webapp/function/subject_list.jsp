@@ -11,14 +11,39 @@
     <a href="subject_registration.jsp">新規登録</a>
     <table>
         <tr>
-            <th>科目コード</th>
-            <th>科目名</th>
-            
+            <td>科目コード</td>
+            <td>科目名</td>
             
         </tr>
+        
         <tr>
-            <td></td>
-            <td></td>
+            <td>A02</td>
+            <td>国語</td>
+            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
+        </tr>
+        
+        <tr>
+            <td>B02</td>
+            <td>数学</td>
+            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
+        </tr>
+        
+        <tr>
+            <td>C02</td>
+            <td>英語コミュニケーション概論</td>
+            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
+        </tr>
+        
+        
+        <tr>
+            <td>D02</td>
+            <td>理科</td>
+            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
+        </tr>
+        
+        <tr>
+            <td>E02</td>
+            <td>情報処理基礎知識Ⅰ</td>
             <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
         </tr>
         
