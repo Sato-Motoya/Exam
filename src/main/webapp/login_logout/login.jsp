@@ -3,7 +3,7 @@
 <%@include file="../function/menu.jsp" %>
 
 <form action="Login.action" method="post">
-<p>ログイン名<br><input type="text" name="name"></p>
+<p>ログイン名<br><input type="text" name="id"></p>
 <p>パスワード<br><input type="password" name="password"></p> 
 <p><input type="submit" value="ログイン"></p>
 </form>

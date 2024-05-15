@@ -15,20 +15,20 @@ public class LoginAction extends Action {
 
 		HttpSession session=request.getSession();
 
-		String name=request.getParameter("name");
+		String id=request.getParameter("id");
 		String password=request.getParameter("password");
 		TeacherDAO dao=new TeacherDAO();
-		Teacher teacher=dao.login(name, password);
+		Teacher teacher=dao.login(id, password);
 
 		if(teacher!=null) {
 			session.setAttribute("teacher", teacher);
 
-		request.getRequestDispatcher("login-out.jsp").
+		request.getRequestDispatcher("mainmenu.jsp").
 			forward(request, response);
 //			return "login-out.jsp";
 		}
 
-		request.getRequestDispatcher("login-error.jsp").
+		request.getRequestDispatcher("mainmenu.jsp").
 		forward(request, response);
 //		return"login-error.jsp";
 

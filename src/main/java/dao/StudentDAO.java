@@ -92,7 +92,7 @@ public class StudentDAO extends DAO{
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from student where school_cd = ? and ent_year = ? and is_attend = ?");
-		st.setString(1, school.toString());
+		st.setString(1, school.getCd());
 		st.setInt(2, entYear);
 		st.setBoolean(3, isAttend);
 		ResultSet rs=st.executeQuery();
@@ -121,7 +121,7 @@ public class StudentDAO extends DAO{
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from student where school_cd = ? and is_attend = ?");
-		st.setString(1, school.toString());
+		st.setString(1, school.getCd());
 		st.setBoolean(2, isAttend);
 		ResultSet rs=st.executeQuery();
 

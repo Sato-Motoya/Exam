@@ -2,7 +2,9 @@ package exam;
 
 import java.util.List;
 
+import bean.School;
 import bean.Subject;
+import bean.Teacher;
 import dao.SubjectDAO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,13 +19,16 @@ public class SubjectListAction extends Action {
 
 		HttpSession session=request.getSession(); // セッションの開始
 
-		String school=request.getParameter("ここにIdを");
+		Teacher teacher=((Teacher)session.getAttribute("teacher"));
+		School school=teacher.getSchool();
+		
+		
 		SubjectDAO dao=new SubjectDAO();
-		List<Subject> list=dao.filter(); // 学生一覧を取得
+		List<Subject> list=dao.filter(school); // 科目一覧を取得
 
-		session.setAttribute("list", list); // 学生一覧をlistという名前で保存
+		session.setAttribute("list", list); // 科目一覧をlistという名前で保存
 
-		request.getRequestDispatcher("subject-list.jsp").
+		request.getRequestDispatcher("subject_list.jsp").
 		forward(request, response);
 
 //		return "StudentList.jsp"; // studentList.jspに遷移

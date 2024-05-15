@@ -11,11 +11,17 @@
     <a href="subject_registration.jsp">新規登録</a>
     <table>
         <tr>
-            <td>科目コード</td>
-            <td>科目名</td>
+            <th>科目コード</th>
+            <th>科目名</th>
             
         </tr>
-        
+        <c:forEach var ="Subject" items="${list }">
+			<tr>
+			<td>${Subject.cd }</td>
+			<td>${Subject.name }</td>
+			</tr>
+		</c:forEach>
+		        
         <tr>
             <td>A02</td>
             <td>国語</td>
