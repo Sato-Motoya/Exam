@@ -9,9 +9,7 @@
 <body>
     <h1>得点管理システム</h1>
     
-    <c:if test="${not empty errorMessage}">
-        <p style="color: red">${errorMessage}</p>
-    </c:if>
+    
     
     <form action="UpdateSubjectAction" method="post">
         
