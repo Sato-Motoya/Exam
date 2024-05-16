@@ -18,7 +18,7 @@ public class TeacherDAO extends DAO{
 
 		ResultSet rs=st.executeQuery();
 
-		Teacher teacher =null;
+		Teacher teacher =new Teacher();
 
 		teacher.setId(id);
 		teacher.setName(rs.getString("name"));

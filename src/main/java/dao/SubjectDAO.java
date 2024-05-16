@@ -21,7 +21,7 @@ public class SubjectDAO extends DAO{
 
 		ResultSet rs=st.executeQuery();
 
-		Subject subject =null;
+		Subject subject =new Subject();
 
 		subject.setCd(cd);
 		subject.setName(rs.getString("name"));
