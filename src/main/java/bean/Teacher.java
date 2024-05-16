@@ -6,7 +6,7 @@ public class Teacher implements java.io.Serializable {
 	private String id;
 	private String name;
 	private String password;
-	private School school;
+	private String school;
 
 	// データを取得するメソッドを定義
 	public String getId() {
@@ -18,7 +18,7 @@ public class Teacher implements java.io.Serializable {
 	public String getPassword() {
 		return password;
 	}
-	public School getSchool() {
+	public String getSchool() {
 		return school;
 	}
 
@@ -32,7 +32,7 @@ public class Teacher implements java.io.Serializable {
 	public void setPassword(String password) {
 		this.password=password;
 	}
-	public void setSchool(School school) {
+	public void setSchool(String school) {
 		this.school=school;
 	}
 }

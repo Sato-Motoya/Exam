@@ -27,7 +27,7 @@ public class StudentDAO extends DAO{
 		
 		student.setNo(no);
 		student.setName(rs.getString("name"));
-		student.setSchool((School)rs.getObject("school"));
+		student.setSchool(rs.getString("school"));
 		
 		return student;
 	}
@@ -55,7 +55,7 @@ public class StudentDAO extends DAO{
 
 	}
 	
-	public List<Student> filter(School school,int entYear,String classNum ,boolean isAttend) throws Exception{
+	public List<Student> filter(String school,int entYear,String classNum ,boolean isAttend) throws Exception{
 		List<Student> list=new ArrayList<>();
 
 		Connection con=getConnection();
@@ -85,14 +85,14 @@ public class StudentDAO extends DAO{
 		return list;
 
 	}
-	public List<Student> filter(School school,int entYear,boolean isAttend) throws Exception{
+	public List<Student> filter(String school,int entYear,boolean isAttend) throws Exception{
 		List<Student> list=new ArrayList<>();
 
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from student where school_cd = ? and ent_year = ? and is_attend = ?");
-		st.setString(1, school.getCd());
+		st.setString(1, school);
 		st.setInt(2, entYear);
 		st.setBoolean(3, isAttend);
 		ResultSet rs=st.executeQuery();
@@ -114,14 +114,14 @@ public class StudentDAO extends DAO{
 		return list;
 
 	}
-	public List<Student> filter(School school,boolean isAttend)throws Exception{
+	public List<Student> filter(String school,boolean isAttend)throws Exception{
 		List<Student> list=new ArrayList<>();
 
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from student where school_cd = ? and is_attend = ?");
-		st.setString(1, school.getCd());
+		st.setString(1, school);
 		st.setBoolean(2, isAttend);
 		ResultSet rs=st.executeQuery();
 

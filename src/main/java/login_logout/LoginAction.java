@@ -23,12 +23,12 @@ public class LoginAction extends Action {
 		if(teacher!=null) {
 			session.setAttribute("teacher", teacher);
 
-		request.getRequestDispatcher("mainmenu.jsp").
+		request.getRequestDispatcher("../function/mainmenu.jsp").
 			forward(request, response);
 //			return "login-out.jsp";
 		}
 
-		request.getRequestDispatcher("mainmenu.jsp").
+		request.getRequestDispatcher("../function/mainmenu.jsp").
 		forward(request, response);
 //		return"login-error.jsp";
 

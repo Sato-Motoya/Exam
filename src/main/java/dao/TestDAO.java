@@ -7,23 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import bean.School;
-import bean.Student;
-import bean.Subject;
 import bean.Test;
 
 public class TestDAO extends DAO{
 
 	private String baseSql;
 
-	public Test get(Student student,Subject subject,School school,int no) throws Exception{
+	public Test get(String student,String subject,String school,int no) throws Exception{
 
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
 				"select name from test where student_no = ? and subject_cd = ? and school_cd = ? and no = ?");
-		st.setString(1,student.toString());
-		st.setString(2, subject.toString());
-		st.setString(3, school.toString());
+		st.setString(1,student);
+		st.setString(2, subject);
+		st.setString(3, school);
 		st.setInt(4, no);
 
 		ResultSet rs=st.executeQuery();
@@ -42,7 +40,7 @@ public class TestDAO extends DAO{
 	private List<Test> postFilter(ResultSet rSet,School school){
 
 	}
-	public List<Test> filter(int entYear,String classNum,Subject subject,int no, School school) throws Exception{
+	public List<Test> filter(int entYear,String classNum,String subject,int no, String school) throws Exception{
 		List<Test> list=new ArrayList<>();
 
 		Connection con=getConnection();
@@ -59,7 +57,7 @@ public class TestDAO extends DAO{
 		while (rs.next()) {
 			Test test=new Test();
 			test.setNo(no);
-			test.setStudent((Student)rs.getObject("stuent_no"));
+			test.setStudent(rs.getString("stuent_no"));
 			test.setSubject(subject);
 			test.setSchool(school);
 			test.setClassNum(classNum);
