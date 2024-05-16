@@ -9,7 +9,6 @@
 <p></p>
 
 <li><a href="student_list.jsp">学生管理一覧</a></li>
-
 <p></p>
 
 <li>成績管理

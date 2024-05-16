@@ -6,4 +6,4 @@
 
 <a href="student_create">戻る</a>
 
-<%@include file="../footer.html" %>
+<%@include file="../footer.jsp" %>

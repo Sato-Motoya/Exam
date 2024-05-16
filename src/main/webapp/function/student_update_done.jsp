@@ -5,4 +5,4 @@
 <p>更新が完了しました。</p>
 
 
-<%@include file="../footer.html" %>
+<%@include file="../footer.jsp" %>

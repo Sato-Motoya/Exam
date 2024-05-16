@@ -1,9 +1,157 @@
 @charset "utf-8";
 
+/*共通部分*/
+
 header {
-  background-color: skyblue ;
-  
-  
-  
-  
-  }
+  width: 964px;
+  margin: 0 auto 10px;;
+  padding: 10px 10px;
+  background: lightblue;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+header h1 {
+	text-align: left;
+	padding: 0 20px;
+	
+}
+
+
+#logout {
+	text-align: right;
+	margin: -40px 50px 10px;
+}
+
+
+footer {
+  width: 964px;
+  background: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0 0 0;
+  margin: 0 0 20px 200px;
+  text-align: center;
+}
+
+
+
+aside {
+	width: 200px;
+/*	padding-left: 135px;*/
+	float: left;
+	margin: 0 0 0 200px;
+	list-style:none;
+}
+
+
+#section1 {
+	overflow: hidden;
+}
+
+
+
+section {
+	width: 1100px;
+	float: right;
+	padding: 0 0 100px 0;
+	border-left: 1px solid gray;
+	padding-left: 50px;
+	position: relative;
+	left: 165px;
+}
+
+#subtitle {
+	
+	background-color: #EEEEEE;
+	width: 682px; 
+	margin: 0 0 25px 0;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 20px;
+
+}
+
+.main {
+	display: flex;
+}	
+
+/*メインメニュー*/
+
+.group-inner1 {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px lightgray;;
+	width: 200px;
+	height: 150px;
+	margin: 13px;
+	font-size: 25px;
+	background-color: lightcoral;
+	text-align: center;
+	list-style: none;	
+}
+
+.group-inner2 {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px lightgray;;
+	width: 200px;
+	height: 150px;
+	margin: 13px;
+	font-size: 25px;
+	background-color: lightgreen;
+	text-align: center;
+	list-style: none;	
+}
+
+.group-inner3 {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px lightgray;;
+	width: 200px;
+	height: 150px;
+	margin: 13px;
+	font-size: 25px;
+	background-color: skyblue;
+	text-align: center;
+	list-style: none;	
+}
+
+
+/*学生管理一覧*/
+
+.new {
+	overflow:hidden;
+}
+
+.new_student {
+	text-align:right;
+	padding-right: 365px;
+}
+
+
+.student_list_main {
+	display: flex;
+	border: 1px solid black; 
+	margin-right: 366px;
+	padding: 15px 5px;
+}	
+
+.student_list1 {
+	padding: 0 10px;
+	
+}
+
+.student_list2 {
+	padding: 20px 0 0  20px;
+}
+
+
+.student_inner {
+	width: 200px;
+	
+}	
+
+
+
+
+
+
+

@@ -48,4 +48,4 @@
 	<p><input type="submit" value="検索"</p>
 </form>
 
-<%@include file="../footer.html" %>
+<%@include file="../footer.jsp" %>

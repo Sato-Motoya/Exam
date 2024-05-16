@@ -1,20 +1,9 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 
-<!DOCTYPE html>
 
 <html>
-<<<<<<< HEAD
-=======
-<head>
-<<<<<<< HEAD
-<meta charset="UTF-8">
-<link rel="stylesheet" href="/Exam/css/style.css">
-=======
 
->>>>>>> branch 'master' of https://github.com/Sato-Motoya/Exam.git
-<title>得点管理システム</title>
-</head>
->>>>>>> branch 'master' of https://github.com/Sato-Motoya/Exam.git
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
 <body>
@@ -22,7 +11,7 @@
 	<header>
 		<h1>得点管理システム</h1>
 
-		<h5>
+		<h5 id="logout">
 			<a href="../login-logout/logout.jsp">ログアウト</a>
 
 		</h5>

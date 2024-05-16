@@ -20,4 +20,4 @@
 <a href="student_update.jsp">戻る</a>
 
 
-<%@include file="../footer.html" %>
+<%@include file="../footer.jsp" %>
