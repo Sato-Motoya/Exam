@@ -3,24 +3,24 @@ package bean;
 public class Test implements java.io.Serializable {
 
 	// Beanで使用する変数（フィールド名）を宣言
-	private Student student;
+	private String student;
 	private String classNum;
-	private Subject subject;
-	private School school;
+	private String subject;
+	private String school;
 	private int no;
 	private int point;
 
 	// データを取得するメソッドを定義
-	public Student getStudent(){
+	public String getStudent(){
 		return student;
 	}
 	public String getClassNum() {
 		return classNum;
 	}
-	public Subject getSubject() {
+	public String getSubject() {
 		return subject;
 	}
-	public School getSchool() {
+	public String getSchool() {
 		return school;
 	}
 	public int getNo() {
@@ -32,16 +32,16 @@ public class Test implements java.io.Serializable {
 
 
 	// データを設定するメソッドを定義
-	public void setStudent(Student student) {
+	public void setStudent(String student) {
 		this.student=student;
 	}
 	public void setClassNum(String classNum) {
 		this.classNum=classNum;
 	}
-	public void setSubject(Subject subject) {
+	public void setSubject(String subject) {
 		this.subject=subject;
 	}
-	public void setSchool(School school) {
+	public void setSchool(String school) {
 		this.school=school;
 	}
 	public void setNo(int no) {

@@ -5,7 +5,7 @@ public class Subject implements java.io.Serializable {
 	// Beanで使用する変数（フィールド名）を宣言
 	private String cd;
 	private String name;
-	private School school;
+	private String school;
 
 	// データを取得するメソッドを定義
 	public String getCd() {
@@ -14,7 +14,7 @@ public class Subject implements java.io.Serializable {
 	public String getName() {
 		return name;
 	}
-	public School getSchool() {
+	public String getSchool() {
 		return school;
 	}
 
@@ -25,7 +25,7 @@ public class Subject implements java.io.Serializable {
 	public void setName(String name) {
 		this.name=name;
 	}
-	public void setSchool(School school) {
+	public void setSchool(String school) {
 		this.school=school;
 	}
 }
