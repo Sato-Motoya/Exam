@@ -52,7 +52,7 @@
 				<div class="student_list2">
 					<p class="student-inner">
 						<input type="checkbox" name="is-attend" value="在学中">在学中
-						<input type="submit" value="絞り込み">
+						<input class="btn btn-secondary" type="submit" value="絞り込み">
 					</p>
 				</div>
 			</div>
