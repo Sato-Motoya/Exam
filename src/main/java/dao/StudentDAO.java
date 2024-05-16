@@ -27,7 +27,7 @@ public class StudentDAO extends DAO{
 		
 		student.setNo(no);
 		student.setName(rs.getString("name"));
-		student.setSchool(rs.getString("school"));
+		student.setSchool(rs.getString("school_cd"));
 		
 		return student;
 	}
