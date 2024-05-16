@@ -16,7 +16,7 @@ public class ClassNumDAO extends DAO{
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from school where cd = ?");
-		st.setString(1, school.toString());
+		st.setString(1, school.getCd());
 		ResultSet rs=st.executeQuery();
 
 		while (rs.next()) {

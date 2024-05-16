@@ -15,13 +15,13 @@ public class SubjectDAO extends DAO{
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
-				"select name from subject where cd = ? and school = ?");
+				"select name from subject where cd = ? and school_cd = ?");
 		st.setString(1, cd);
-		st.setString(2, school.toString());
+		st.setString(2, school.getCd());
 
 		ResultSet rs=st.executeQuery();
 
-		Subject subject =null;
+		Subject subject =new Subject();
 
 		subject.setCd(cd);
 		subject.setName(rs.getString("name"));
@@ -37,7 +37,7 @@ public class SubjectDAO extends DAO{
 
 		PreparedStatement st=con.prepareStatement(
 			"select * from subject where school_cd like ?");
-		st.setString(1, school.toString());
+		st.setString(1, school.getCd());
 		ResultSet rs=st.executeQuery();
 
 		while (rs.next()) {

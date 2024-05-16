@@ -18,7 +18,7 @@ public class SchoolDAO extends DAO{
 
 		ResultSet rs=st.executeQuery();
 
-		School school =null;
+		School school =new School();
 
 		school.setCd(cd);
 		school.setName(rs.getString("name"));

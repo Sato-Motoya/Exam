@@ -28,7 +28,7 @@ public class TestDAO extends DAO{
 
 		ResultSet rs=st.executeQuery();
 
-		Test test =null;
+		Test test =new Test();
 
 		test.setNo(no);
 		test.setStudent(student);

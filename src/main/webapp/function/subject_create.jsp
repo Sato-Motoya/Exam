@@ -18,11 +18,12 @@
         <label for="subjectCode">科目コード:</label><br>
         <input type="text" id="subjectCode" name="subjectCode" required pattern="[A-Za-z0-9]{3}"><br><br>
         
+        
         <!-- 登録ボタン -->
         <input type="submit" value="登録"><br><br>
         
         <!-- 戻るリンク -->
-        <a href="list.jsp">戻る</a>
+        <a href="subject_list.jsp">戻る</a>
     </form>
 </body>
 </html>

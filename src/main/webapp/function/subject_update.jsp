@@ -9,13 +9,11 @@
 <body>
     <h1>得点管理システム</h1>
     
-    <c:if test="${not empty errorMessage}">
-        <p style="color: red">${errorMessage}</p>
-    </c:if>
     
-    <form action="UpdateSubjectServlet" method="post">
-        <label for="subjectId">科目ID:</label>
-        <input type="text" id="subjectId" name="subjectId" value="${subject.id}" readonly><br><br>
+    
+    <form action="UpdateSubjectAction" method="post">
+        
+        
         
         <label for="subjectName">科目名:</label>
         <input type="text" id="subjectName" name="subjectName" value="${subject.name}" required><br><br>
@@ -24,7 +22,8 @@
         <input type="text" id="subjectCode" name="subjectCode" value="${subject.code}" required pattern="[A-Za-z0-9]{3}"><br><br>
         
         <input type="submit" value="更新">
-        <a href="list.jsp">キャンセル</a>
+        <br>
+        <a href="subject_list.jsp">戻る</a>
     </form>
 </body>
 </html>

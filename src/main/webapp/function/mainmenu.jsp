@@ -11,12 +11,31 @@
 <%@include file="../header.jsp"%>
 <%@include file="menu.jsp"%>
 
+<<<<<<< HEAD
 <div id="section1">
 	<section>
 		<p id="subtitle">メニュー</p>
+=======
+
+<section>
+<h2>
+	メニュー
+</h2>
+
+<h3>
+	<p><a href="student_list.jsp">学生管理一覧</a></p>
+	<li>成績管理</li>
+	<li><a href="test_regist.jsp">成績管理一覧</a></li>
+	<li><a href="test_list.jsp">成績参照検索</a></li>
+	<p><a href="../exam/SubjectList.action">科目管理一覧</a><p>
+
+</h3>
+</section>
+>>>>>>> branch 'master' of https://github.com/Sato-Motoya/Exam.git
 
 
 
+<<<<<<< HEAD
 		<div class="main">
 			<div class="row">
 				<div class="col-4">
@@ -49,3 +68,6 @@
 
 
 <%@include file="../footer.jsp"%>
+=======
+<%@include file="../footer.jsp" %>
+>>>>>>> branch 'master' of https://github.com/Sato-Motoya/Exam.git
