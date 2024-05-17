@@ -11,7 +11,7 @@
     
     
     
-    <form action="SbjectUpdateExecute.action" method="post">
+    <form action="SubjectUpdateExecute.action" method="post">
         
         
         
