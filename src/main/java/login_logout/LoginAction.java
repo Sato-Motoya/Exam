@@ -28,7 +28,7 @@ public class LoginAction extends Action {
 //			return "login-out.jsp";
 		}
 
-		request.getRequestDispatcher("../function/mainmenu.jsp").
+		request.getRequestDispatcher("login.jsp").
 		forward(request, response);
 //		return"login-error.jsp";
 

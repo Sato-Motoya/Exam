@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,40 +21,10 @@
 			<tr>
 			<td>${Subject.cd }</td>
 			<td>${Subject.name }</td>
+         	<td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
 			</tr>
 		</c:forEach>
-		        
-        <tr>
-            <td>A02</td>
-            <td>国語</td>
-            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
-        </tr>
-        
-        <tr>
-            <td>B02</td>
-            <td>数学</td>
-            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
-        </tr>
-        
-        <tr>
-            <td>C02</td>
-            <td>英語コミュニケーション概論</td>
-            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
-        </tr>
-        
-        
-        <tr>
-            <td>D02</td>
-            <td>理科</td>
-            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
-        </tr>
-        
-        <tr>
-            <td>E02</td>
-            <td>情報処理基礎知識Ⅰ</td>
-            <td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
-        </tr>
-        
+		                
     </table>
     
 </body>

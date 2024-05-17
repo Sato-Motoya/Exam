@@ -27,7 +27,7 @@ public class StudentDAO extends DAO{
 		
 		student.setNo(no);
 		student.setName(rs.getString("name"));
-		student.setSchool(rs.getString("school"));
+		student.setSchool(rs.getString("school_cd"));
 		
 		return student;
 	}
@@ -142,10 +142,60 @@ public class StudentDAO extends DAO{
 		return list;
 
 	}
-	public boolean save(Student student) {
-		
+	public boolean save(Student student) throws Exception{
+		Connection con=getConnection();
+		con.setAutoCommit(false);
+
+		PreparedStatement st=con.prepareStatement(
+				"insert into student(no,name.ent_year,cass_num,is_attend,school_cd) values(?, ?, ?, ?, ?, ?)");
+		st.setString(1, student.getNo());
+		st.setString(2, student.getName());
+		st.setInt(3, student.getEntYear());
+		st.setString(4, student.getClassNum());
+		st.setBoolean(5, student.getIsAttend());
+		st.setString(6, student.getSchool());
+
+		int line=st.executeUpdate();
+		st.close();
+
+		if (line!=1) {
+			con.rollback();
+			con.setAutoCommit(true);
+			con.close();
+			return false;
+		}
+	
+
+	con.commit();
+	con.setAutoCommit(true);
+	con.close();
+	return true;
+
+
 	}
-	public boolean delete(Student student) {
-		
+	public boolean delete(Student student)throws Exception {
+		Connection con=getConnection();
+		con.setAutoCommit(false);
+
+		PreparedStatement st=con.prepareStatement(
+				"delete from student where no = ?");
+		st.setString(1, student.getNo());
+
+		int line=st.executeUpdate();
+		st.close();
+
+		if (line!=1) {
+			con.rollback();
+			con.setAutoCommit(true);
+			con.close();
+			return false;
+		}
+	
+
+	con.commit();
+	con.setAutoCommit(true);
+	con.close();
+	return true;
+
 	}
 }

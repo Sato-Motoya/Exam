@@ -6,21 +6,19 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import bean.School;
-
 public class ClassNumDAO extends DAO{
-	public List<String> filter(School school) throws Exception{
+	public List<String> filter(String school) throws Exception{
 		List<String> list=new ArrayList<>();
 
 		Connection con=getConnection();
 
 		PreparedStatement st=con.prepareStatement(
-			"select * from school where cd = ?");
-		st.setString(1, school.getCd());
+			"select * from class_num where school_cd = ?");
+		st.setString(1, school);
 		ResultSet rs=st.executeQuery();
 
 		while (rs.next()) {
-			list.add(rs.getString("name"));
+			list.add(rs.getString("class_num"));
 		}
 
 		st.close();
