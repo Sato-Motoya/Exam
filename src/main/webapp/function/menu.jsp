@@ -16,7 +16,7 @@
 		<ul><a href="test_list.jsp">成績参照</a></ul>
 </li>
 
-<li><a href="#">科目管理</a></li>
+<li><a href="subject_list.jsp">科目管理</a></li>
 
 </aside>
 
