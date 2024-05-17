@@ -15,7 +15,7 @@
 		<p class="subtitle">成績参照</p>
 		<form>
 			<div class="test_list_main">
-				<div class="test_list1">
+				<div class="test_sub">
 					<p>科目情報</p>
 				</div>
 				<div class="test_list1">
@@ -43,36 +43,50 @@
 					</dl>
 				</div>
 				<div class="test_list1">
-					 <dt>クラス</dt>
-					 <dd>
-						<select class="test_list_inner" name="class">
-							<option value="101">101</option>
-							<option value="201">131</option>
-							<option value="101">201</option>
-						</select>
-					</dd>
+					<dl>
+					 	<dt>クラス</dt>
+				 		<dd>
+							<select class="test_list_inner" name="class">
+								<option value="101">101</option>
+								<option value="201">131</option>
+								<option value="101">201</option>
+							</select>
+						</dd>
+					</dl>
 				</div>	
 				
 				<div class="test_list1">
-					<dt>科目</dt>
+					<dl>
+						<dt>科目</dt>
 						<dd>
 							<select class="test_list_inner" name="subject">
 								<option value="japanese">国語</option>
 								<option value="math">数学</option>
 							</select>
 						</dd>
+					</dl>
 				</div>
 				
 				<p class="kensaku">	
 					<input class="btn btn-secondary" type="submit" value="検索"</p>
 				</p>
-				
-				
-				
-				<h5>学生情報</h5>
-				<h5>学生番号</h5>
-				<p><input type="text" name="no"></p>
-				<p><input type="submit" value="検索"</p>
+			</div>
+			<br>
+			<div class="test_list_main">
+				<div class="test_sub">
+					<p>学生情報</p>
+				</div>
+				<div class="test_list2">
+					<dl>
+						<dt>学生番号</dt>
+						<dd>
+							<input type="text" name="no">
+						</dd>
+					</dl>
+				</div>
+				<div class="test_list2">
+						<input type="submit" value="検索">		
+				</div>
 			</div>
 		</form>
 	</section>

@@ -1,4 +1,4 @@
-package login_logout;
+package function;
 
 import bean.Teacher;
 import dao.TeacherDAO;
@@ -23,7 +23,7 @@ public class LoginAction extends Action {
 		if(teacher!=null) {
 			session.setAttribute("teacher", teacher);
 
-		request.getRequestDispatcher("../function/mainmenu.jsp").
+		request.getRequestDispatcher("mainmenu.jsp").
 			forward(request, response);
 //			return "login-out.jsp";
 		}
