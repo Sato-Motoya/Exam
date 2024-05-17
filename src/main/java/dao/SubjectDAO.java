@@ -53,11 +53,57 @@ public class SubjectDAO extends DAO{
 		return list;
 	}
 
-	public boolean save(Subject subject) {
+	public boolean save(Subject subject) throws Exception{
+		Connection con=getConnection();
+		con.setAutoCommit(false);
+
+		PreparedStatement st=con.prepareStatement(
+				"insert into subject(school_cd,cd,name) values(?, ?, ?)");
+		st.setString(1, subject.getSchool());
+		st.setString(2, subject.getCd());
+		st.setString(3, subject.getName());
+		int line=st.executeUpdate();
+		st.close();
+
+		if (line!=1) {
+			con.rollback();
+			con.setAutoCommit(true);
+			con.close();
+			return false;
+		}
+	
+
+	con.commit();
+	con.setAutoCommit(true);
+	con.close();
+	return true;
+
 
 	}
 
-	public boolean delete(Subject subject) {
+	public boolean delete(Subject subject) throws Exception{
+		Connection con=getConnection();
+		con.setAutoCommit(false);
+
+		PreparedStatement st=con.prepareStatement(
+				"delete from subject where cd=?");
+		st.setString(1, subject.getCd());
+		int line=st.executeUpdate();
+		st.close();
+
+		if (line!=1) {
+			con.rollback();
+			con.setAutoCommit(true);
+			con.close();
+			return false;
+		}
+	
+
+	con.commit();
+	con.setAutoCommit(true);
+	con.close();
+	return true;
+
 
 	}
 }
