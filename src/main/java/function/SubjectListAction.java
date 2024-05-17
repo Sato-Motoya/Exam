@@ -1,4 +1,4 @@
-package exam;
+package function;
 
 import java.util.List;
 

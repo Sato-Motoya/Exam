@@ -1,4 +1,4 @@
-package exam;
+package function;
 
 import tool.Action;
 //要らないファイルかも

@@ -27,7 +27,7 @@
 	<li>成績管理</li>
 	<li><a href="test_regist.jsp">成績管理一覧</a></li>
 	<li><a href="test_list.jsp">成績参照検索</a></li>
-	<p><a href="../exam/SubjectList.action">科目管理一覧</a><p>
+	<p><a href="../function/SubjectList.action">科目管理一覧</a><p>
 
 </h3>
 </section>
