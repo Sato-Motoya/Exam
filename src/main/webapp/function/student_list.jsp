@@ -12,15 +12,16 @@
 
 <div id="section1">
 	<section>
-		<p id="subtitle">学生管理</p>
+		<p class="subtitle">学生管理</p>
 		<p id="new">
 			<p class="new_student"><a href="student_create.jsp">新規登録</a></p>
 		</p>
 		<form>
-			<div class="student_list_main">
+			<div class="student_list_main">	
 				<div class="student_list1">
-					<p>入学年度<br>
+				<p>入学年度<br>
 						<select name="ent-year" class="student_inner">
+							<option value="" selected hidden>----------</option>
 							<option value="2000">2000</option>
 							<option value="2001">2001</option>
 							<option value="2002">2002</option>
@@ -39,10 +40,11 @@
 						</select>
 					</p>
 				</div>	
-				<div class="student_list">
+				<div class="student_list1">
 					<p>
 						クラス<br>
 						<select name="class" class="student_inner">
+							<option value="" selected hidden>----------</option>
 							<option value="101">101</option>
 							<option value="201">131</option>
 							<option value="101">201</option>
@@ -52,6 +54,10 @@
 				<div class="student_list2">
 					<p class="student-inner">
 						<input type="checkbox" name="is-attend" value="在学中">在学中
+					</p>
+				</div>
+				<div class="student_list_submit">
+					<p class="student-inner">
 						<input class="btn btn-secondary" type="submit" value="絞り込み">
 					</p>
 				</div>

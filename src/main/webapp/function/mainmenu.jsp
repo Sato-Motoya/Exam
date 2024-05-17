@@ -14,7 +14,7 @@
 
 <div id="section1">
 	<section>
-		<p id="subtitle">メニュー</p>
+		<div class="subtitle">メニュー</div>
 		<div class="main">
 			<div class="row">
 				<div class="col-4">
