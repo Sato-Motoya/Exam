@@ -12,7 +12,7 @@
 <%@include file="menu.jsp"%>
 
 
-<div id="section1">
+<div class="section1">
 	<section>
 		<div class="subtitle">メニュー</div>
 		<div class="main">
@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-4">
 					<div class="group-inner3 d-flex align-items-center justify-content-center">
-						<p><a href="#">科目管理一覧</a></p>
+						<p><a href="../function/SubjectList.action">科目管理一覧</a></p>
 					</div>
 				</div>
 			</div>
@@ -47,4 +47,3 @@
 
 
 <%@include file="../footer.jsp"%>
-<%@include file="../footer.jsp" %>
