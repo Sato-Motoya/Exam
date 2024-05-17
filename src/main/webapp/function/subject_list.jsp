@@ -21,10 +21,17 @@
             
         </tr>
         <c:forEach var ="Subject" items="${list }">
+        	<form action="SubjectUpdate.action" method="post">
 			<tr>
-			<td>${Subject.cd }</td>
-			<td>${Subject.name }</td>
-         	<td><a href="subject_update.jsp">変更</a>  <a href="subject_delete.jsp">削除</a></td>
+			<td>${Subject.cd }<input type="hidden" name="cd" value=${Subject.cd }></td>
+			<td>${Subject.name }<input type="hidden" name="name" value=${Subject.name }></td>
+         	<td><input type="submit" value="変更"> </td>
+         	</form>
+         	<form action="SubjectDelete.action" method="post">
+         	<td ><input type="hidden" name="cd" value=${Subject.cd }></td>
+			<td ><input type="hidden" name="name" value=${Subject.name }></td>
+         	<td><input type="submit" value="削除"></td>
+         	</form> 
 			</tr>
 		</c:forEach>
 		                
