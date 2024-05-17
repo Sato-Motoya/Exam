@@ -220,6 +220,10 @@ section {
 	padding: 15px 5px;	
 }
 
+.test_sub {
+	width: 100%;
+}
+
 .test_list1 {
 	padding: 0 10px;	
 }
