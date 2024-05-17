@@ -21,7 +21,7 @@
     
     
     <!-- リンク：一覧に戻る -->
-    <a href="subject_list.jsp">一覧に戻る</a>
+    <a href="SubjectList.action">一覧に戻る</a>
 </body>
 </html>
 <%@include file="../footer.jsp" %>
