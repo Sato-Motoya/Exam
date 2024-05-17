@@ -9,7 +9,10 @@ public class SubjectUpdateAction extends Action{
 	public void execute(
 			HttpServletRequest request, HttpServletResponse response)throws Exception {
 
-		request.getRequestDispatcher("../function/subject_update.jsp").
+		String cd=request.getParameter("cd");
+		request.setAttribute("cd", cd);
+
+		request.getRequestDispatcher("subject_update.jsp").
 			forward(request, response);
 	}
 }

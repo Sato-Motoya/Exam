@@ -18,13 +18,13 @@
             
         </tr>
         <c:forEach var ="Subject" items="${list }">
-        	<form action="SubjectUpdate.Action" method="post">
+        	<form action="SubjectUpdate.action" method="post">
 			<tr>
 			<td>${Subject.cd }<input type="hidden" name="cd" value=${Subject.cd }></td>
 			<td>${Subject.name }<input type="hidden" name="name" value=${Subject.name }></td>
          	<td><input type="submit" value="変更"> </td>
          	</form>
-         	<form action="SubjectDelete.Action" method="post">
+         	<form action="SubjectDelete.action" method="post">
          	<td ><input type="hidden" name="cd" value=${Subject.cd }></td>
 			<td ><input type="hidden" name="name" value=${Subject.name }></td>
          	<td><input type="submit" value="削除"></td>

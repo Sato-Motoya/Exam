@@ -27,7 +27,7 @@ public class SubjectListAction extends Action {
 
 		session.setAttribute("list", list); // 科目一覧をlistという名前で保存
 
-		request.getRequestDispatcher("../function/subject_list.jsp").
+		request.getRequestDispatcher("subject_list.jsp").
 		forward(request, response);
 
 //		return "StudentList.jsp"; // studentList.jspに遷移

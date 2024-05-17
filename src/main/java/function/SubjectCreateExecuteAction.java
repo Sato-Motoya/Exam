@@ -32,7 +32,7 @@ public class SubjectCreateExecuteAction extends Action{
 
 
 			if (result==true) {
-				request.getRequestDispatcher("../function/subject_create_done.jsp").
+				request.getRequestDispatcher("subject_create_done.jsp").
 				forward(request, response);
 			}
 //			return "StudentList.jsp"; // studentList.jspに遷移

@@ -27,13 +27,13 @@ public class SubjectDeleteExecuteAction extends Action{
 		
 		
 		SubjectDAO dao=new SubjectDAO();
-		boolean result=dao.delete(subject); // 科目登録
+		boolean result=dao.delete(subject); // 科目削除
 
 
 		if (result==true) {
-			request.getRequestDispatcher("../function/subject_delete_done.jsp").
+			request.getRequestDispatcher("subject_delete_done.jsp").
 			forward(request, response);
-		} {
+		} 
 		
 	}
 }

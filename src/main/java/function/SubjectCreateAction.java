@@ -9,7 +9,7 @@ public class SubjectCreateAction extends Action{
 	public void execute(
 			HttpServletRequest request, HttpServletResponse response)throws Exception {
 
-		request.getRequestDispatcher("../function/subject_create.jsp").
+		request.getRequestDispatcher("subject_create.jsp").
 			forward(request, response);
 	}
 }

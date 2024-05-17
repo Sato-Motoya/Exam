@@ -11,15 +11,15 @@
     
     
     
-    <form action="UpdateSubjectAction" method="post">
+    <form action="SbjectUpdateExecute.action" method="post">
         
         
         
-        <label for="subjectName">科目名:</label>
-        <input type="text" id="subjectName" name="subjectName" value="${subject.name}" required><br><br>
+        <label for="subjectName">科目コード</label>
+        <input type="hidden" id="subjectName" name="cd" value="${cd }" >${cd }<br><br>
         
-        <label for="subjectCode">科目コード:</label>
-        <input type="text" id="subjectCode" name="subjectCode" value="${subject.code}" required pattern="[A-Za-z0-9]{3}"><br><br>
+        <label for="subjectCode">科目名</label>
+        <input type="text" id="subjectCode" name="name" required pattern="[A-Za-z0-9]{3}"><br><br>
         
         <input type="submit" value="更新">
         <br>
