@@ -15,6 +15,6 @@
  
     
     <!-- リンク：一覧に戻る -->
-    <a href="subject_list.jsp">科目一覧</a>
+    <a href="SubjectList.action">科目一覧</a>
 </body>
 </html>
