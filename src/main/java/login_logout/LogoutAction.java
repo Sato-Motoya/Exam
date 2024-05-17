@@ -16,13 +16,13 @@ public class LogoutAction extends Action {
 		if (session.getAttribute("teacher")!=null) {
 			session.removeAttribute("teacher");
 
-			request.getRequestDispatcher("../function/mainmenu.jsp").
+			request.getRequestDispatcher("logout.jsp").
 				forward(request, response);
 
 		}
 
 
-		request.getRequestDispatcher("../function/mainmenu.jsp").
+		request.getRequestDispatcher("logout.jsp").
 			forward(request, response);
 
 	}
