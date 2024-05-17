@@ -27,8 +27,8 @@ header h1 {
 footer {
   width: 964px;
   background: #EEEEEE;
-/*  position: absolute;*/
-/*  bottom: 0;*/
+  position: absolute;
+  bottom: 0;
   padding: 15px 0 0 0;
   margin: 0 0 20px 200px;
   text-align: center;
@@ -45,7 +45,7 @@ aside {
 }
 
 
-#section1 {
+.section1 {
 	overflow: hidden;
 }
 
@@ -54,11 +54,12 @@ aside {
 section {
 	width: 1100px;
 	float: right;
-	padding: 0 0 200px 0;
+	padding: 0 0 50px 0;
 	border-left: 1px solid gray;
 	padding-left: 50px;
 	position: relative;
 	left: 165px;
+	margin-bottom: 50px;
 }
 
 .subtitle {
@@ -136,7 +137,6 @@ section {
 
 .student_list1 {
 	padding: 0 10px;
-	
 }
 
 .student_list2 {
@@ -153,7 +153,6 @@ section {
 .student_inner {
 	width: 200px;
 	border-radius: 5px;
-	
 }	
 
 
@@ -189,13 +188,46 @@ section {
 	padding: 15px 5px;
 }	
 
+.regist_inner {
+	width: 200px;
+	border-radius: 5px;
+}
+
+.regist_inner_s {
+	width: 100px;
+	border-radius: 5px;
+}
 
 
 .regist_list1 {
 	padding: 0 10px;
 }
 
+.kensaku {
+	padding-top:10px;
+	padding-left: 15px;
+}
 
+
+
+/*参照検索*/
+
+.test_list_main {
+	display: flex;
+	border: 1px solid black; 
+	border-radius: 10px;
+	margin-right: 366px;
+	padding: 15px 5px;	
+}
+
+.test_list1 {
+	padding: 0 10px;	
+}
+
+.test_list_inner {
+	width: 75px;
+	border-radius: 5px;
+}
 
 
 
