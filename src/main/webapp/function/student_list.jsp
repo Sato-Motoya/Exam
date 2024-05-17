@@ -10,7 +10,7 @@
 <%@include file="../header.jsp" %>
 <%@include file="menu.jsp" %>
 
-<div id="section1">
+<div class="section1">
 	<section>
 		<p class="subtitle">学生管理</p>
 		<p id="new">
