@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-4">
 					<div class="group-inner3 d-flex align-items-center justify-content-center">
-						<p><a href="../function/subject_list.jsp">科目管理一覧</a></p>
+						<p><a href="../function/SubjectList.action">科目管理一覧</a></p>
 					</div>
 				</div>
 			</div>
