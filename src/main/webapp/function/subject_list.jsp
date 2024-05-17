@@ -10,7 +10,10 @@
 <body>
     <h1>得点管理システム</h1>
     <h2>科目管理</h2>
-    <a href="subject_create.jsp">新規登録</a>
+    <form action="SubjectCreate.action">   
+    	 <input type="submit" value="新規登録">
+    </form>
+
     <table>
         <tr>
             <th>科目コード</th>
