@@ -1,4 +1,4 @@
-package login_logout;
+package function;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

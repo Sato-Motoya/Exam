@@ -12,7 +12,7 @@
 		<h1>得点管理システム</h1>
 
 		<h5 id="logout">
-			<a href="../login-logout/logout.jsp">ログアウト</a>
+			<a href="Logout.action">ログアウト</a>
 
 		</h5>
 
