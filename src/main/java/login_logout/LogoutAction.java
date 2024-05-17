@@ -7,18 +7,24 @@ import tool.Action;
 
 public class LogoutAction extends Action {
 	@Override
-	public String execute(
+	public void execute(
 			HttpServletRequest request, HttpServletResponse response
 		) throws Exception {
 
 		HttpSession session=request.getSession();
 
-		if (session.getAttribute("name")!=null) {
-			session.removeAttribute("name");
-			return "logout-out.jsp";
+		if (session.getAttribute("teacher")!=null) {
+			session.removeAttribute("teacher");
+
+			request.getRequestDispatcher("../function/mainmenu.jsp").
+				forward(request, response);
+
 		}
 
-		return "logout-error.jsp";
+
+		request.getRequestDispatcher("../function/mainmenu.jsp").
+			forward(request, response);
+
 	}
 
 }
