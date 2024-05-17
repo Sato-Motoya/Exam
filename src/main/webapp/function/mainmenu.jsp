@@ -12,7 +12,7 @@
 <%@include file="menu.jsp"%>
 
 
-<div id="section1">
+<div class="section1">
 	<section>
 		<div class="subtitle">メニュー</div>
 		<div class="main">
@@ -47,4 +47,3 @@
 
 
 <%@include file="../footer.jsp"%>
-<%@include file="../footer.jsp" %>
